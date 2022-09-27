@@ -1,5 +1,5 @@
 FROM debian:11
-FROM python:3.10.1-slim-buster
+FROM python:3.10.6-slim-buster
 
 WORKDIR /ShuKurenaiXRoBot/
 
@@ -14,4 +14,4 @@ RUN pip3 install wheel
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 COPY . .
-CMD ["python3.9", "-m", "ShuKurenaiXRoBot"]
+CMD ["python3.10", "-m", "ShuKurenaiXRoBot"]
